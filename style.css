@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 a,
@@ -14,8 +15,14 @@ button {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration : none; 
     cursor: pointer;
+    
+}
+li:hover {
+    text-decoration: underline;
+    
+    
 }
 
 #page-loading-blocs-notifaction {
@@ -231,7 +238,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(0, 0, 0, .8);
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -361,8 +368,10 @@ a:hover {
     position: relative;
     z-index: 2;
 }
-
-@media (min-width: 768px) {
+.site-navigation li {
+    transition: transform 200ms;
+}
+@media (min-width: 800px) {
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -592,12 +601,12 @@ a[data-lightbox]:hover img {
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 20;
+   
     background: rgba(0, 0, 0, .5);
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 .close-lightbox:hover,
@@ -651,7 +660,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000;
 }
 
 .container {
@@ -707,13 +716,25 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    text-align: center;
 }
-
+p {
+    text-align: center;
+    font-size: 1.6rem;
+}
+.comment-customer {
+    font-size: 1.8rem;
+    font-style: italic;
+    color:#333333;
+}
+#nous {
+    color:#F3976C;
+}
 h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #000000!important;
 }
 
 .med-width-whitespace {
@@ -753,12 +774,12 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgb(34 32 27 / 83%);
     padding: 40px 40px 40px 40px;
 }
 
 .bold-link {
-    font-weight: 900;
+    font-weight: 400;
     text-decoration: underline!important;
 }
 
@@ -780,7 +801,7 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -822,7 +843,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.png");
 }
 
 @media (max-width: 1024px) {
@@ -839,16 +860,16 @@ h4 {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 992px) and (min-width: 800px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 100%
     }
     .nav-center.navbar .nav {
         max-width: 100%
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 800px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -889,7 +910,7 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -910,8 +931,8 @@ h4 {
     }
     .navbar .nav {
         padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
+        /*border-top: 1px solid rgba(0, 0, 0, .2);*/
+        float: none;
     }
     .navbar.row {
         margin-left: 0;
@@ -1035,7 +1056,7 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .bloc-mob-center-text {
         text-align: center;
     }
